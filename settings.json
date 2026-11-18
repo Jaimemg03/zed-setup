@@ -1,0 +1,167 @@
+// Zed settings — VS Code feel + Catppuccin Mocha + OpenCode (ACP)
+// Documentation: https://zed.dev/docs/configuring-zed
+// Default settings: `zed: open default settings` (Ctrl+Shift+P)
+{
+  // ===========================================================================
+  // 1. Apariencia, Tema e Iconos
+  // ===========================================================================
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Mocha",
+    "dark": "Catppuccin Mocha"
+  },
+  "icon_theme": "Catppuccin Mocha",
+  "colorize_brackets": true,
+  "selection_highlight": true,
+
+  // ===========================================================================
+  // 2. Tipografía y Ligaduras
+  // ===========================================================================
+  "ui_font_family": "CaskaydiaCove Nerd Font",
+  "ui_font_size": 16,
+  "ui_font_weight": 500,
+
+  "buffer_font_family": "CaskaydiaCove Nerd Font",
+  "buffer_font_size": 17,
+  "buffer_font_weight": 400,
+  "buffer_font_features": {
+    "calt": true,
+    "liga": true,
+    "zero": true,
+    "cv01": true
+  },
+
+  // ===========================================================================
+  // 3. Resaltado de Sintaxis (Cursivas)
+  // ===========================================================================
+  "experimental.theme_overrides": {
+    "syntax": {
+      "comment": { "font_style": "italic" },
+      "comment.doc": { "font_style": "italic" },
+      "keyword": { "font_style": "italic" },
+      "keyword.control": { "font_style": "italic" },
+      "keyword.function": { "font_style": "italic" },
+      "keyword.operator": { "font_style": "italic" },
+      "keyword.return": { "font_style": "italic" },
+      "type": { "font_style": "italic" },
+      "function": { "font_style": "italic" }
+    }
+  },
+
+  // ===========================================================================
+  // 4. Comportamiento del Editor (Estilo VS Code)
+  // ===========================================================================
+  "base_keymap": "VSCode",
+  "vim_mode": false,
+  "tab_size": 2,
+  "soft_wrap": "editor_width",
+  "preferred_line_length": 100,
+  "show_wrap_guides": true,
+  "format_on_save": "on",
+  "remove_trailing_whitespace_on_save": true,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "inlay_hints": {
+    "enabled": true
+  },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+
+  // ===========================================================================
+  // 5. Interfaz, Pestañas y Git
+  // ===========================================================================
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+  "preview_tabs": {
+    "enabled": true,
+    "enable_preview_from_file_finder": true
+  },
+  "project_panel": {
+    "auto_fold_dirs": false,
+    "git_status": true
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": true
+    }
+  },
+
+  // ===========================================================================
+  // 6. Terminal Integrada
+  // ===========================================================================
+  "terminal": {
+    "font_family": "MesloLGS NF",
+    "font_fallbacks": ["MesloLGS Nerd Font Mono", "MesloLGS Nerd Font", "CaskaydiaCove Nerd Font"],
+    "font_size": 14
+  },
+
+  // ===========================================================================
+  // 7. Agentes de IA (OpenCode vía ACP)
+  // ===========================================================================
+  "agent": {
+    "flexible": true
+  },
+  "agent_servers": {
+    "OpenCode": {
+      "type": "custom",
+      "default_config_options": {
+        "mode": "plan"
+      },
+      "command": "opencode",
+      "args": ["acp"],
+      "env": {
+        "OPENCODE_API_KEY": "TU_OPENCODE_API_KEY"
+      }
+    }
+  },
+
+  // ===========================================================================
+  // 8. Extensiones Autoinstalables
+  // ===========================================================================
+  "auto_install_extensions": {
+    "catppuccin": true,
+    "catppuccin-icons": true,
+    "dockerfile": true,
+    "docker-compose": true,
+    "env": true,
+    "toml": true,
+    "sql": true,
+    "xml": true,
+    "git-firefly": true,
+    "html": true,
+    "emmet": true,
+    "biome": true,
+    "comment": true,
+    "emoji-completions": true
+  },
+
+  // ===========================================================================
+  // 9. Conexiones Remotas (WSL)
+  // ===========================================================================
+  "wsl_connections": [
+    {
+      "distro_name": "Ubuntu",
+      "user": null,
+      "projects": []
+    }
+  ],
+
+  // ===========================================================================
+  // 10. Sesión y Privacidad
+  // ===========================================================================
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": false,
+    "anthropic_retention": false
+  }
+}
