@@ -15,9 +15,6 @@
   <img src="assets/screenshot.png" alt="Vista de Zed con Catppuccin Mocha, ligaduras, iconos y terminal integrada" width="100%">
 </p>
 
-> [!NOTE]
-> Añade tu captura en `assets/screenshot.png` para mostrar el resultado final. Puedes generar una vista atractiva desde la rama [`showcase`](https://github.com/Jaimemg03/zed-setup/tree/showcase) abriendo `zed-showcase/src/showcase.ts` con el panel de proyecto y la terminal visibles.
-
 Este repositorio contiene mi configuración personal de [Zed](https://zed.dev/), el editor de código moderno, rápido y con enfoque en la colaboración y la IA. Lo comparto como parte de mi descubrimiento de Zed para que cualquier persona —incluso si nunca lo ha probado— pueda replicar mi entorno en pocos minutos.
 
 ---
